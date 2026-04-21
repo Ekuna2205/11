@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="logo">KUMA<span>.</span></a>
+
+      <nav>
+        <ul class="nav-list" id="navMenu"></ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="Theme солих">☀️</button>
+        <a href="admin.html" class="primary-btn small-btn">Admin</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left reveal">
+          <span class="badge">Frontend Developer • Portfolio</span>
+          <h1 id="heroTitle">Сайн уу, би Экүна</h1>
+          <p id="heroText">
+            Орчин үеийн UI, responsive веб сайт, JavaScript суурьтай интерактив
+            шийдлүүдийг бүтээдэг.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="primary-btn hero-btn">Төслүүд үзэх</a>
+            <a href="#contact" class="secondary-btn hero-btn">Холбоо барих</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card glass">
+              <h3 id="projectCount">0+</h3>
+              <p>Төсөл</p>
+            </div>
+            <div class="stat-card glass">
+              <h3 id="skillCount">0+</h3>
+              <p>Ур чадвар</p>
+            </div>
+            <div class="stat-card glass">
+              <h3>100%</h3>
+              <p>Responsive</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="profile-card glass">
+            <div class="profile-top">
+              <div class="profile-avatar">Э</div>
+              <div>
+                <h3 id="profileName">Экүна</h3>
+                <p>Creative Web Designer</p>
+              </div>
+            </div>
+
+            <div class="profile-boxes">
+              <div class="mini-box">
+                <span>UI/UX</span>
+                <strong>Modern</strong>
+              </div>
+              <div class="mini-box">
+                <span>Code</span>
+                <strong>Clean</strong>
+              </div>
+              <div class="mini-box">
+                <span>Stack</span>
+                <strong>HTML / CSS / JS</strong>
+              </div>
+              <div class="mini-box">
+                <span>Deploy</span>
+                <strong>GitHub Pages</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Миний тухай</span>
+          <h2>Tовч танилцуулах хэсэг</h2>
+         
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass reveal">
+            <h3>Миний зорилго</h3>
+            <p>Хэрэглэгчдэд үзэмжтэй, хурдан, responsive веб сайт бүтээх.</p>
+          </div>
+
+          <div class="about-card glass reveal">
+            <h3>Миний давуу тал</h3>
+            <p>Цэвэр код, орчин үеийн дизайн, ойлгомжтой UI болон хурдан хөгжүүлэлт.</p>
+          </div>
+
+          <div class="about-card glass reveal">
+            <h3>Ашигладаг технологи</h3>
+            <p>HTML, CSS, JavaScript, GitHub Pages, responsive layout, animation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Skills</span>
+          <h2>Миний ур чадварууд</h2>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Projects</span>
+          <h2>Бүтээсэн төслүүд</h2>
+          <p>Админ хэсгээс шинэ төсөл нэмэхэд энд автоматаар харагдана.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-container">
+        <div class="section-head reveal">
+          <span class="section-tag">Contact</span>
+          <h2>Холбоо барих</h2>
+        </div>
+
+        <form id="contactForm" class="contact-form glass reveal">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Таны нэр</label>
+              <input type="text" placeholder="Нэрээ оруулна уу" required />
+            </div>
+
+            <div class="form-group">
+              <label>И-мэйл</label>
+              <input type="email" placeholder="example@gmail.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Гарчиг</label>
+            <input type="text" placeholder="Юуны талаар бичиж байна вэ?" required />
+          </div>
+
+          <div class="form-group">
+            <label>Мессеж</label>
+            <textarea placeholder="Мессежээ бичнэ үү..." required></textarea>
+          </div>
+
+          <button type="submit" class="primary-btn full-btn">Илгээх</button>
+          <p id="contactMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Modern Portfolio. Бүх эрх хуулиар хамгаалагдсан.</p>
+      <a href="#home">Дээш буцах ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
