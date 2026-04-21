@@ -1,5 +1,5 @@
 const defaultData = {
-  heroTitle: "Сайн уу, би Энхээ",
+  heroTitle: "Сайн уу, би Экүна бна",
   heroText:
     "Орчин үеийн UI, responsive веб сайт, JavaScript суурьтай интерактив шийдлүүдийг бүтээдэг.",
   menu: [
